@@ -86,8 +86,8 @@ spec:
         - name: csi-plugin
           securityContext:
             privileged: true
-          imagePullPolicy: IfNotPresent
-          image: ghcr.io/zebernst/synology-csi:v1.1.0
+          imagePullPolicy: Always
+          image: ghcr.io/kodek/synology-csi-talos:v1.1.0
           args:
             - --nodeid=$(KUBE_NODE_NAME)
             - --endpoint=$(CSI_ENDPOINT)

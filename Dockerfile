@@ -37,6 +37,7 @@ RUN <<-EOF
 		iproute2 \
 		util-linux \
 		xfsprogs \
+    open-iscsi \
 		xfsprogs-extra
 EOF
 

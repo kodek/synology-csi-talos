@@ -1,7 +1,7 @@
 #  Copyright 2021 Synology Inc.
 
-REGISTRY_NAME=ghcr.io/zebernst
-IMAGE_NAME=synology-csi
+REGISTRY_NAME=ghcr.io/kodek
+IMAGE_NAME=synology-csi-talos
 IMAGE_VERSION=v1.1.0
 IMAGE_TAG=$(REGISTRY_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION)
 

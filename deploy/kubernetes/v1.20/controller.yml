@@ -143,7 +143,7 @@ spec:
             capabilities:
               add: ["SYS_ADMIN"]
             allowPrivilegeEscalation: true
-          image: ghcr.io/zebernst/synology-csi:v1.1.0
+          image: ghcr.io/kodek/synology-csi-talos:v1.1.0
           args:
             - --nodeid=NotUsed
             - --endpoint=$(CSI_ENDPOINT)
@@ -153,7 +153,7 @@ spec:
           env:
             - name: CSI_ENDPOINT
               value: unix:///var/lib/csi/sockets/pluginproxy/csi.sock
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           volumeMounts:
             - name: socket-dir
               mountPath: /var/lib/csi/sockets/pluginproxy/
